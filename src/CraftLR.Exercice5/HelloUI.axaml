@@ -2,6 +2,6 @@
     <StackPanel Orientation="Vertical">
         <TextBlock>What is your name?</TextBlock>
         <TextBox Name="NameTB"></TextBox>
-        <TextBlock Name="GreetingTB" Text="{Binding ElementName='NameTB', Path=Text}"/>
+        <TextBlock Name="GreetingTB" Text="{Binding ElementName='NameTB', Path=Text, StringFormat='Bonjour {0}'}"></TextBlock>
     </StackPanel>
 </Window>
