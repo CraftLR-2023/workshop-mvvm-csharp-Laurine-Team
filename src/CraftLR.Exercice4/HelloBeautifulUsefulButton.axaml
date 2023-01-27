@@ -1,4 +1,5 @@
-<Window xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Class="CraftLR.Exercice4.HelloBeautifulUsefulButton" Title="Hello Beautiful Useful Button !">
+<Window xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Class="CraftLR.Exercice4.HelloBeautifulUsefulButton" Title="Hello Beautiful Useful Button !" Height="250" Width="250">
     <DockPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+        <Button Click="Button_OnClick" HorizontalAlignment="Center" VerticalAlignment="Center"><Image Source="Assets/logo.png"></Image></Button>
     </DockPanel>
 </Window>
