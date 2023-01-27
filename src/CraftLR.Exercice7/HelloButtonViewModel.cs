@@ -1,4 +1,5 @@
 using System.ComponentModel;
+using System.Reflection.Metadata;
 using System.Runtime.CompilerServices;
 
 namespace CraftLR.Exercice7;
@@ -34,9 +35,15 @@ public class HelloButtonViewModel : HelloButtonViewModelBase
         }
     }
 
-    public void CountClick()
+    public bool CanCountClick()
     {
-        _numberOfClicks++;
-        ButtonCaption = $"{_numberOfClicks} Clicks";
+        if (_numberOfClicks <= 4)
+        {
+            _numberOfClicks++;
+            ButtonCaption = $"{_numberOfClicks} Clicks";
+            return true;
+        }
+
+        return false;
     }
 }

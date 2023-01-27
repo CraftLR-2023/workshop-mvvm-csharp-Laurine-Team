@@ -9,7 +9,7 @@
     </Design.DataContext>
 
     <StackPanel>
-        <Button Content="{Binding Path=ButtonCaption}" Command="{Binding CountClick}" />
+        <Button Content="{Binding Path=ButtonCaption}" Command="{Binding CanCountClick}" />
     </StackPanel>
 
 </Window>
