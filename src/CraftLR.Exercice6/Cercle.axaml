@@ -2,8 +2,8 @@
     <StackPanel Orientation="Vertical">
         <Slider Name="RadiusSlider" Minimum="0" Maximum="500" TickFrequency="10" IsSnapToTickEnabled="True"/>
         <Panel Width="500" Height="500" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <Ellipse Name="CentralEllipse" Fill="Black" Width="{Binding RelativeSource={RelativeSource Self},Path=Height}" /> 
+            <Ellipse Name="CentralEllipse" Fill="Black" Width="{Binding RelativeSource={RelativeSource Self},Path=Height}" Height="{Binding Mode=TwoWay, ElementName=RadiusSlider, Path=Value}"/> 
         </Panel>
-        <TextBox/>
+        <TextBox Text="{Binding ElementName=RadiusSlider, Path=Value}"/>
     </StackPanel>
 </Window>
